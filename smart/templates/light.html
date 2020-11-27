@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		<meta http-equiv="refresh" content="30" >
+		<title>Smart House light</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+
+		<link rel="stylesheet" type="text/css" href="/static/style.css">
+		
+
+	</head>
+
+
+	<body>
+		
+			<div class="topnav" id="myTopnav">
+                  <a class="logo" href="/">Smart Home</a>
+                  <a class="nav" href="/temperature/">Temperature</a>
+				  <a class="nav" href="/light/">Light</a>
+				  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
+				<h1> Electric control </h1>
+				
+
+				<table align="center">
+                   <tr>
+					   <td><h2>&nbsp;Light&nbsp;</h2></td>
+					   <td>&nbsp;</td>
+					   <td><h2>&nbsp;Outlet&nbsp;</h2></td>
+				   </tr>
+					<tr>
+					  <td align="center"><button><h2><a href="/on/">ON</a></h2></button></td>
+					  <td>&nbsp;</td>
+					  <td align="center"><button><h2><a href="/onoutlet/">ON</a></h2></button></td>
+					</tr>
+					<tr>
+						<td align="center"><button><h2><a href="/off/">OFF</a></h2></button></td>
+						<td>&nbsp;</td>
+						<td align="center"><button><h2><a href="/offoutlet/">OFF</a></h2></button></td>
+				
+				  </table>
+
+
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
